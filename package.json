@@ -9,13 +9,15 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo no tests"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/big-lotto/website.git"
   },
-  "keywords": ["flep"],
+  "keywords": [
+    "flep"
+  ],
   "author": "Fábio Pagoti",
   "license": "ISC",
   "bugs": {
@@ -33,6 +35,6 @@
     "passport-google-oauth20": "^1.0.0"
   },
   "devDependencies": {
-    "dotenv": "^6.1.1"
+    "dotenv": "^6.1.0"
   }
 }
