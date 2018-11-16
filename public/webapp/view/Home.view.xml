@@ -1,0 +1,22 @@
+<mvc:View
+	controllerName="smartie.loteca.website.controller.Home"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	height="100%">
+	<l:BlockLayout id="BlockLayoutTwo">
+		<l:BlockLayoutRow>
+			<l:BlockLayoutCell class="customCellImageBackground" title="Smartie Loteca"
+				titleAlignment="Center">
+				<Text text="A melhor forma de apostar"/>
+			</l:BlockLayoutCell>
+			<!-- <l:BlockLayoutCell id="cell-2"
+				title="An Icon"
+				backgroundColorSet="{/colorSet}"
+				backgroundColorShade="{/shades/1}">
+				<core:Icon src="sap-icon://add-activity"/>
+			</l:BlockLayoutCell> -->
+		</l:BlockLayoutRow>
+	</l:BlockLayout>
+</mvc:View>

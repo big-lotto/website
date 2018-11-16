@@ -1,0 +1,46 @@
+<core:FragmentDefinition
+	xmlns:core="sap.ui.core"
+	xmlns:tnt="sap.tnt"
+	xmlns:f="sap.f"
+	xmlns="sap.m"
+	height="100%">
+	<tnt:ToolHeader>
+		<Button icon="sap-icon://menu2" type="Transparent">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+		</Button>
+		<ToolbarSpacer width="20px" />
+		<Button text="Home" type="Transparent" press=".menu.onHome">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="Low" />
+			</layoutData>
+		</Button>
+		<tnt:ToolHeaderUtilitySeparator />
+		<ToolbarSpacer>
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" minWidth="20px" />
+			</layoutData>
+		</ToolbarSpacer>
+		<Button 
+			visible="{=!${session>/authenticated}}"
+			text="Login" type="Transparent" press=".menu.onLogin">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+		</Button>
+		<Button 
+			visible="{session>/authenticated}"
+			text="Logout" type="Transparent" press=".menu.onLogout">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+		</Button>
+		<f:Avatar
+			src="{session>/user/picture}"
+			visible="{session>/authenticated}"
+			displayShape="Circle"
+			displaySize="XS">
+		</f:Avatar>
+	</tnt:ToolHeader>
+</core:FragmentDefinition>

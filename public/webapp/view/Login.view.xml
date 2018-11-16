@@ -1,0 +1,20 @@
+<mvc:View
+	controllerName="smartie.loteca.website.controller.Login"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	height="100%">
+	
+	<GenericTile 
+		class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+		header="Google"
+		press="onGoogle"
+		>
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://add" />
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+</mvc:View>

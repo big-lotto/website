@@ -1,0 +1,20 @@
+<mvc:View
+	controllerName="smartie.loteca.website.controller.Profile"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.f"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	height="100%">
+
+	<VBox
+		alignItems="Center" class="sapUiSmallMarginTop">
+		<f:Avatar
+			src="{session>/user/picture}"
+			displaySize="L">
+		</f:Avatar>
+		<Text
+			text="{session>/user/name}"
+			>
+		</Text>
+	</VBox>
+</mvc:View>

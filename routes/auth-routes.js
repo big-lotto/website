@@ -12,7 +12,7 @@ router.get('/login', (req, res) => {
 router.get('/logout', (req, res) => {
     // handle with passport
     req.logout();
-    res.redirect('/');
+    res.redirect('/app');
 });
 
 // auth with google+
@@ -23,8 +23,7 @@ router.get('/google', passport.authenticate('google', {
 
 // callback route for google to redirect to
 router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
-    // res.send(req.user);
-    res.redirect('/profile');
+    res.redirect('/app/#profile');
 });
 
 
