@@ -8,11 +8,12 @@
 	>
 	<App id="root">
 		<pages>
-			<tnt:ToolPage id="page" sideExpanded="false">
+			<tnt:ToolPage sideExpanded="{sideMenu>/expanded}" id="page">
 				<tnt:header>
 					<core:Fragment fragmentName="smartie.loteca.website.fragment.Menu" type="XML" />
 				</tnt:header>
 				<tnt:sideContent>
+					<core:Fragment fragmentName="smartie.loteca.website.fragment.SideMenu" type="XML" />
 				</tnt:sideContent>
 				<tnt:mainContents>
 					<NavContainer id="main">

@@ -5,7 +5,11 @@
 	xmlns="sap.m"
 	height="100%">
 	<tnt:ToolHeader>
-		<Button icon="sap-icon://menu2" type="Transparent">
+		<Button 
+			visible="{session>/authenticated}"
+			icon="sap-icon://menu2" 
+			type="Transparent" 
+			press=".menu.onToggleSideMenu">
 			<layoutData>
 				<OverflowToolbarLayoutData priority="NeverOverflow" />
 			</layoutData>

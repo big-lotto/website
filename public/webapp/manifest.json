@@ -58,6 +58,16 @@
 				"type": "sap.ui.model.json.JSONModel",
 				"settings": {
 				}
+			},
+			"sideMenu": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {
+				}
+			},
+			"menu": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {
+				}
 			}
 		},
 		"resources": {
@@ -66,52 +76,52 @@
 			}]
 		},
 		"routing": {
-            "config": {
-            	"routerClass": "sap.m.routing.Router",
-                "viewType": "XML",
-                "viewPath": "smartie.loteca.website.view",
-                "controlId": "main",
-                "controlAggregation": "pages",
-                "clearTarget": true,
-                "transition": "show",
-                "bypassed": {
-                    "target": ""
-                },
-                "homeRoute": "home"
-            },
-            "routes": [
-            	{
-                    "pattern": "",
-                    "name": "home",
-                    "target": [ "home" ]
-                },
-                {
-                    "pattern": "login",
-                    "name": "login",
-                    "target": [ "login" ]
-                },
-                {
-                    "pattern": "profile",
-                    "name": "profile",
-                    "target": [ "profile" ]
-                },
-                {
-                    "pattern": "cb",
-                    "name": "callback",
-                    "target": [ "profile" ]
-                }
-            ],
-            "targets": {
-                "home": {
-                    "viewName": "Home"
-                },
-                "login": {
-                    "viewName": "Login"
-                },
-                "profile": {
-                    "viewName": "Profile"
-                }
-            }
-        }
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "smartie.loteca.website.view",
+				"controlId": "main",
+				"controlAggregation": "pages",
+				"clearTarget": true,
+				"transition": "show",
+				"bypassed": {
+					"target": ""
+				},
+				"homeRoute": "home"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "home",
+					"target": [ "home" ]
+				},
+				{
+					"pattern": "login",
+					"name": "login",
+					"target": [ "login" ]
+				},
+				{
+					"pattern": "profile",
+					"name": "profile",
+					"target": [ "profile" ]
+				},
+				{
+					"pattern": "cb",
+					"name": "callback",
+					"target": [ "profile" ]
+				}
+			],
+			"targets": {
+				"home": {
+					"viewName": "Home"
+				},
+				"login": {
+					"viewName": "Login"
+				},
+				"profile": {
+					"viewName": "Profile"
+				}
+			}
+		}
 	}
 }

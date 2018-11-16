@@ -18,7 +18,7 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 
-app.use('/app', express.static('public/webapp'));
+app.use('/', express.static('public/webapp'));
 
 app.use(cookieSession({
 	maxAge: 24 * 60 * 60 * 1000, // day
