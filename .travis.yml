@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '10'
+deploy:
+  - provider: cloudfoundry
+    api: https://api.run.pivotal.io
+    username: fabiopagoti@gmail.com
+    password:
+      secure: 
+    organization: pagoti
+    space: big-lotto-dev
+    on:
+      repo: big-lotto/website
+      branch: dev
+      node: '10'

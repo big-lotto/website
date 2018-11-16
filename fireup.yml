@@ -4,10 +4,10 @@ processes:
     env:
       PORT: 8080
       NODE_ENV: "development"
-      GOOGLE_CLIENT_ID: "965659191734-khjd1c43o270athmodq63mjmhb21utl2.apps.googleusercontent.com"
-      GOOGLE_CLIENT_SECRET: "X3Po-nCyp2eTfuDJaNK4yf-Z"
-      SESSION_COOKIE_KEY: "somethingrandomthatnobobobobodywillevereverev3erd1sc0v3%wowcloudfoundry"
-      MONGO_SERVICE_NAME: "cf-oauth-users"
+      GOOGLE_CLIENT_ID: "280255208724-n8uhsptmmv8k1h2rlu4j4afrvb7kmitb.apps.googleusercontent.com"
+      GOOGLE_CLIENT_SECRET: "t4g_odt8bMz5PWwac5XaCSbf"
+      SESSION_COOKIE_KEY: "session-development-12349876"
+      MONGO_SERVICE_NAME: "users"
       VCAP_APPLICATION: >
         {
           "application_uris": [
@@ -21,7 +21,7 @@ processes:
               "label": "mlab",
               "provider": null,
               "plan": "sandbox",
-              "name": "cf-oauth-users",
+              "name": "users",
               "tags": [
                 "Cloud Databases",
                 "Developer Tools",
@@ -34,10 +34,10 @@ processes:
                 "mongodb",
                 "Mac"
               ],
-              "instance_name": "cf-oauth-users",
+              "instance_name": "users",
               "binding_name": null,
               "credentials": {
-                "uri": "mongodb://CloudFoundry_h8ppr738_3p57buq8_9b08dvfe:uLQKK2Fl_jV3mYbhRx-42SM8HMjjcqZg@ds045137.mlab.com:45137/CloudFoundry_h8ppr738_3p57buq8"
+                "uri": "mongodb://website-app:abcd1234@ds037097.mlab.com:37097/CloudFoundry_flnkd7mg_ao8ji2da"
               },
               "syslog_drain_url": null,
               "volume_mounts": []

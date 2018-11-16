@@ -1,14 +1,14 @@
 ---
 applications:
-- name: cf-oauth
+- name: website
   memory: 128M
   disk_quota: 256M
   random-route: true
-  #buildpack: nodejs_buildpack
+  buildpack: nodejs_buildpack
   health-check-type: port
   env:
-    MONGO_SERVICE_NAME: 'cf-oauth-users'
+    MONGO_SERVICE_NAME: 'users'
     NODE_ENV: 'development'
-    GOOGLE_CLIENT_ID: '965659191734-khjd1c43o270athmodq63mjmhb21utl2.apps.googleusercontent.com'
-    GOOGLE_CLIENT_SECRET: 'X3Po-nCyp2eTfuDJaNK4yf-Z'
-    SESSION_COOKIE_KEY: 'somethingrandomthatnobobobobodywillevereverev3erd1sc0v3%wowcloudfoundry'
+    GOOGLE_CLIENT_ID: '280255208724-n8uhsptmmv8k1h2rlu4j4afrvb7kmitb.apps.googleusercontent.com'
+    GOOGLE_CLIENT_SECRET: 't4g_odt8bMz5PWwac5XaCSbf'
+    SESSION_COOKIE_KEY: 'session-development-12349876'
