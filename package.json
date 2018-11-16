@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Course files for The Net Ninja OAuth playlist on YouTube",
   "main": "index.js",
+  "engines": {
+    "node": "10.12.x",
+    "npm": "6.4.x"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,11 +23,16 @@
   },
   "homepage": "https://github.com/fabiopagoti/oauth-playlist#readme",
   "dependencies": {
+    "boxen": "^2.0.0",
+    "cfenv": "^1.1.0",
     "cookie-session": "^2.0.0-beta.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "mongoose": "^5.3.12",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^6.1.1"
   }
 }

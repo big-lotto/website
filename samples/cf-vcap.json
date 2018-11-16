@@ -1,0 +1,25 @@
+{
+    "application_id": "dc715188-3135-4a7d-b6a0-2b0baf038d46",
+    "application_name": "echo-vcap",
+    "application_uris": [
+        "xxx.cfapps.io"
+    ],
+    "application_version": "7b20b7fd-99b8-4871-8699-46a97d199a12",
+    "cf_api": "https://api.run.pivotal.io",
+    "host": "0.0.0.0",
+    "instance_id": "debf3a9c-4823-4b55-41c0-0337",
+    "instance_index": 0,
+    "limits": {
+        "disk": 256,
+        "fds": 16384,
+        "mem": 128
+    },
+    "name": "echo-vcap",
+    "port": 8080,
+    "space_id": "e3863f9d-81c2-4498-8cab-d5a4eea66946",
+    "space_name": "development",
+    "uris": [
+        "xxx.cfapps.io"
+    ],
+    "version": "7b20b7fd-99b8-4871-8699-46a97d199a12"
+}

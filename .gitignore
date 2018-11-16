@@ -58,7 +58,7 @@ typings/
 .env
 
 # keys
-config/keys.js
+config/sample-keys.js
 
 # next.js build output
 .next
