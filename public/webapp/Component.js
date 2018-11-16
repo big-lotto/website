@@ -21,11 +21,11 @@ sap.ui.define([
 		 	this.getRouter().attachRouteMatched(this.onRouteMatched, this);
 		 	
 		 	this._readSession().then(function(bAuthenticated){
-		 		this.getRouter().initialize(!bAuthenticated);
+		 		models.setSideMenuModel(this);
+		 		this.getRouter().initialize();
 		 	}.bind(this));
 
 		 	this.setModel(models.createDeviceModel(), 'device');
-		 	models.setSideMenuModel(this);
 		 },
 
 		 onRouteMatched: function(oEvent){
