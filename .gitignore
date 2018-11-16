@@ -59,6 +59,7 @@ typings/
 
 # keys
 config/sample-keys.js
+fireup.yml
 
 # next.js build output
 .next
