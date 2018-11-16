@@ -35,16 +35,4 @@ if(util.isCloudFoundry()){
 	keys = require('./sample-keys'); 
 }
 
-
-function getKeysMessage(keys){
-	let message = 
-	`MONGODB: ${keys.mongodb.dbURI}\n`
-	return message;
-}
-
-if(process.env.NODE_ENV === "development"){
-	const message = getKeysMessage(keys);
-	console.log(boxen(message, {padding: 1}));
-}
-
 module.exports = keys; 

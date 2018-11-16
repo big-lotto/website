@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '10'
+deploy:
+  - provider: cloudfoundry
+    api: https://api.run.pivotal.io
+    username: fabiopagoti@gmail.com
+    password:
+      secure: 5+DGpW5ili3tbqp0+Y5G1+gs9GbaF660PNnGUsXBfPalGCX4GDNClTNCAEDBzzlgsx+2AxGF/y17GETUGqjA/KyGWAmIv2s9Z6qCaKRCMuBFsifi+mEEz52aogf8tdmGT7Cmpc/BeqHfDTfSO6bA7nom65rwAyWsTK2dsTM3ZrFW0T1xcIn0hRpw1M6M7LKf2Iu+NxQOt5V9EfsujQQ0OvEzkPGTV6yP3Q+7Oh95fEubNpq/i3nRoxvQ2kX1gaxgxo+VNQa685rUUWnjAJyopPkecUDGSZ6iaLOG4usk/t9wzQDmX5tiIiGQp+Kn9uuXYmyVC8E/uh1jgG+SI9ryjpurLZNdDNcksxwGTR9CYh8mO0xNGjden5TYN2EeeEQZ3NE+5URjSLQnUvhJTiCE3E5U/TJU4CxHMQeQRjFIbh8cKZYkQ0MqN9Nrn/TFlHPvhzSdZrOeDLXUvvLNfQ2RM+csyBBp4OFxX5Jpq+nbh7L7XDC4ZO5xWg0p9A89I11ovedNHDV0d1yUnriAMOtMQesQe8jIjeSoFSVMJ/zUQsSqgcL1+n+Bev+L5h1+t5QMY+M/h+Aiq/Fr5+bels0mY3SdJJyjpYt8PIk9SUNVAmgwMjlvK/CKaF0hEjt1wN5t+2ub9Q3HDHwDtBM1uaQ6zE2gYODFFXnYH1AwvN3r0YE=
+    organization: pagoti
+    space: big-lotto-dev
+    on:
+      repo: big-lotto/website
+      branch: dev
+      node: '10'

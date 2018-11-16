@@ -19,7 +19,7 @@ const passport = require('passport');
 
 
 app.use(cookieSession({
-	maxAge: 24 * 60 * 60* 1000, // day
+	maxAge: 24 * 60 * 60 * 1000, // day
 	keys: [keys.session.cookieKey]
 }));
 
@@ -40,17 +40,28 @@ app.get('/', (req, res) => {
 });
 
 
+
 // connect to mongodb 
 mongoose.connect(
 	keys.mongodb.dbURI, { 
 		useNewUrlParser: true 
 	}, 
 	(err) => {
+
+		function getKeysMessage(keys){
+			let message = 
+			`MONGODB: ${keys.mongodb.dbURI}\n`
+			return message;
+		}
+
 		if(err){
 			console.log(err);
 			return;
 		}
-
+		if(process.env.NODE_ENV === "development"){
+			const message = getKeysMessage(keys);
+			console.log(boxen(message, {padding: 1}));
+		}
 	});
 
 app.listen(config.port, () => {
