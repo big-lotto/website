@@ -2,13 +2,26 @@ language: node_js
 node_js:
 - '10'
 deploy:
-  provider: cloudfoundry
-  api: https://api.run.pivotal.io
-  username: fabiopagoti@gmail.com
-  password:
-    secure: xAANx1K04/FuK+fl8E3VNrikQcFWkLBwNsBoHpYpcyj+eQbcrx0f4p07fh5PCo62E7FMCVUb6P3rI3sfICSaS1DljbZlx95RZhW4YXL8+RBLFbPVo8wmA5vw2yWsrV9hDFEgTiZ56HnwARlJ+LU/RInCYKaxUKqjtjAbuJ6U9BD16OtGRb9uZJiU6B5all8DRce2DUnaQEtdbqKtmpt8Etb9o7+SXSRXpARrcQvu8ZDk+sdtH7VunqTDFU7SoptsymjOhC9M3XkewS8hcw1Le1av2uHoX5iNKEryVEfyUf0HStjNo8P4EJTXX5qnmO8TVKGvFpQ7FgMRLN3+HZ1eXXnuW5XVA3FR6dtffIIMXL9CmdIMm2PC2RVzVYxGrffuBn4GXiYQKr4vNcXkQqDkiPNwC7np44VhYWTtLA0cAuElgQF8YCjUUPiagx5pYKuZfNhXsCI5PiEzVLhToXTodVZoIxSPA7F7c+LHXmavHAIizW9OttUCOFyABvqPP7PxDCDommS1GTMGLCcjXkZoaUAmiIHgm8jYP8n+4kCgPzkWFo7pRHcUkm6m4EcS7lCaFwGJHbF9BRJNOENejau2Uc8d/zwUaar7k23AhuGiDU/FdFjNx+cSDAg0Wxyclf6L+FO3LJRuTVL2gNN6BCrL8Rt/+rPyiDLhL7pvQTKNHqY=
-  organization: pagoti
-  space: big-lotto-dev
-  on:
-    repo: big-lotto/website
-    branch: dev
+  - provider: cloudfoundry
+    api: https://api.run.pivotal.io
+    username: fabiopagoti@gmail.com
+    password:
+      secure: xAANx1K04/FuK+fl8E3VNrikQcFWkLBwNsBoHpYpcyj+eQbcrx0f4p07fh5PCo62E7FMCVUb6P3rI3sfICSaS1DljbZlx95RZhW4YXL8+RBLFbPVo8wmA5vw2yWsrV9hDFEgTiZ56HnwARlJ+LU/RInCYKaxUKqjtjAbuJ6U9BD16OtGRb9uZJiU6B5all8DRce2DUnaQEtdbqKtmpt8Etb9o7+SXSRXpARrcQvu8ZDk+sdtH7VunqTDFU7SoptsymjOhC9M3XkewS8hcw1Le1av2uHoX5iNKEryVEfyUf0HStjNo8P4EJTXX5qnmO8TVKGvFpQ7FgMRLN3+HZ1eXXnuW5XVA3FR6dtffIIMXL9CmdIMm2PC2RVzVYxGrffuBn4GXiYQKr4vNcXkQqDkiPNwC7np44VhYWTtLA0cAuElgQF8YCjUUPiagx5pYKuZfNhXsCI5PiEzVLhToXTodVZoIxSPA7F7c+LHXmavHAIizW9OttUCOFyABvqPP7PxDCDommS1GTMGLCcjXkZoaUAmiIHgm8jYP8n+4kCgPzkWFo7pRHcUkm6m4EcS7lCaFwGJHbF9BRJNOENejau2Uc8d/zwUaar7k23AhuGiDU/FdFjNx+cSDAg0Wxyclf6L+FO3LJRuTVL2gNN6BCrL8Rt/+rPyiDLhL7pvQTKNHqY=
+    organization: pagoti
+    space: big-lotto-dev
+    on:
+      repo: big-lotto/website
+      branch: dev
+      node: '10'
+  - provider: cloudfoundry
+    api: https://api.run.pivotal.io
+    username: fabiopagoti@gmail.com
+    password:
+      secure: xAANx1K04/FuK+fl8E3VNrikQcFWkLBwNsBoHpYpcyj+eQbcrx0f4p07fh5PCo62E7FMCVUb6P3rI3sfICSaS1DljbZlx95RZhW4YXL8+RBLFbPVo8wmA5vw2yWsrV9hDFEgTiZ56HnwARlJ+LU/RInCYKaxUKqjtjAbuJ6U9BD16OtGRb9uZJiU6B5all8DRce2DUnaQEtdbqKtmpt8Etb9o7+SXSRXpARrcQvu8ZDk+sdtH7VunqTDFU7SoptsymjOhC9M3XkewS8hcw1Le1av2uHoX5iNKEryVEfyUf0HStjNo8P4EJTXX5qnmO8TVKGvFpQ7FgMRLN3+HZ1eXXnuW5XVA3FR6dtffIIMXL9CmdIMm2PC2RVzVYxGrffuBn4GXiYQKr4vNcXkQqDkiPNwC7np44VhYWTtLA0cAuElgQF8YCjUUPiagx5pYKuZfNhXsCI5PiEzVLhToXTodVZoIxSPA7F7c+LHXmavHAIizW9OttUCOFyABvqPP7PxDCDommS1GTMGLCcjXkZoaUAmiIHgm8jYP8n+4kCgPzkWFo7pRHcUkm6m4EcS7lCaFwGJHbF9BRJNOENejau2Uc8d/zwUaar7k23AhuGiDU/FdFjNx+cSDAg0Wxyclf6L+FO3LJRuTVL2gNN6BCrL8Rt/+rPyiDLhL7pvQTKNHqY=
+    organization: pagoti
+    space: big-lotto-prd
+    on:
+      repo: big-lotto/website
+      branch: master
+      node: '10'
+

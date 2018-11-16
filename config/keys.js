@@ -16,7 +16,7 @@ let keys = {
 };
 
 if(util.isCloudFoundry()){
-	const cfenv = require('cfenv').getAppEnv();
+	const appEnv = require('cfenv').getAppEnv();
 	const env = process.env;
 	keys = { 
 		google: {
@@ -24,7 +24,7 @@ if(util.isCloudFoundry()){
 			clientSecret: env.GOOGLE_CLIENT_SECRET
 		},
 		mongodb: {
-			dbURI: cfenv.getServiceURL(process.env.MONGO_SERVICE_NAME)
+			dbURI: appEnv.getServiceURL(env.MONGO_SERVICE_NAME)
 		},
 		session: {
 			cookieKey: env.SESSION_COOKIE_KEY

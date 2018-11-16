@@ -7,8 +7,8 @@ applications:
   buildpack: nodejs_buildpack
   health-check-type: port
   env:
-    MONGO_SERVICE_NAME: 'users'
-    NODE_ENV: 'development'
-    GOOGLE_CLIENT_ID: '280255208724-n8uhsptmmv8k1h2rlu4j4afrvb7kmitb.apps.googleusercontent.com'
-    GOOGLE_CLIENT_SECRET: 't4g_odt8bMz5PWwac5XaCSbf'
-    SESSION_COOKIE_KEY: 'session-development-12349876'
+    # MONGO_SERVICE_NAME: 'users'
+    # NODE_ENV: 'development'
+    # GOOGLE_CLIENT_ID: ''
+    # GOOGLE_CLIENT_SECRET: ''
+    # SESSION_COOKIE_KEY: ''
